@@ -1,0 +1,585 @@
+[
+    {
+        "id": "0e46594e7c184d66",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "75cbf805fa396e39",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097710",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097710",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097710",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0ebe1a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097710",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3b0409ace6584c3e",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "bdeaa1cd139496b7",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "3b0409ace6584c3e",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "544f0a6f8c6136db",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "3b0409ace6584c3e",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "82bc284bb7df614c",
+        "type": "websocket-listener",
+        "path": "/esp8266",
+        "wholemsg": "false"
+    },
+    {
+        "id": "fa8e8e5adeacfe66",
+        "type": "ui_group",
+        "name": "Trang chủ",
+        "tab": "5a46c0bda4183baf",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a46c0bda4183baf",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6c665c6e3d5e7cc3",
+        "type": "websocket-client",
+        "path": "ws://192.168.1.12:1880/esp8266",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "4db4869f657f6363",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "vanviet002022.cloud.shiftr.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d8155337346fe797",
+        "type": "mongodb",
+        "hostname": "mongodb+srv://tranhuy002023:0949326546Aa@cluster0.khxudmo.mongodb.net/DIEN_MAT_TROI?retryWrites=true&w=majority",
+        "port": "27017",
+        "db": "DIEN_MAT_TROI",
+        "name": "HAHA"
+    },
+    {
+        "id": "10b31caf7dfed95c",
+        "type": "mongodb-config",
+        "name": "MongoDB",
+        "host": "mongodb+srv://tranhuy002023:0949326546Aa@cluster0.khxudmo.mongodb.net/DIEN_MAT_TROI?retryWrites=true&w=majority",
+        "port": "27015",
+        "database": "DIEN_MAT_TROI",
+        "collections": [
+            {
+                "name": "BANG 1",
+                "optionsType": "json",
+                "options": "{}",
+                "autoCreate": false,
+                "autoCreateOptionsType": "json",
+                "autoCreateOptions": "{}",
+                "autoCreateIndexesType": "json",
+                "autoCreateIndexes": "[]"
+            }
+        ],
+        "options": ""
+    },
+    {
+        "id": "151d5bb044d8af6d",
+        "type": "mongodb-aleph-config",
+        "hostname": "cluster0.eupqqpj.mongodb.net",
+        "topology": "dnscluster",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "bai1",
+        "name": "Mongo DB"
+    },
+    {
+        "id": "6714c573c749bece",
+        "type": "aedes broker",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "vanviet002022.cloud.shiftr.io",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "767dad0f51c5168a",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "doam",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "64eeb33bb8038aa4"
+            ]
+        ]
+    },
+    {
+        "id": "6c14f852cbb3295f",
+        "type": "mqtt out",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "button",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4db4869f657f6363",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9431f147d60260d1",
+        "type": "ui_switch",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "label": "BẬT ĐÈN",
+        "tooltip": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "6c14f852cbb3295f"
+            ]
+        ]
+    },
+    {
+        "id": "64eeb33bb8038aa4",
+        "type": "ui_gauge",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ĐỘ ẨM",
+        "label": "% ĐỘ ẨM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "85",
+        "className": "",
+        "x": 680,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cf26a15a19e95931",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "nhietdo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "98e1d9bc3e8c587b"
+            ]
+        ]
+    },
+    {
+        "id": "207a991f7a951425",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "anhsang",
+        "topic": "anhsang",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "90b3d94bb5e807fc"
+            ]
+        ]
+    },
+    {
+        "id": "98e1d9bc3e8c587b",
+        "type": "ui_gauge",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "NHIỆT ĐỘ",
+        "label": "ĐỘ C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "40",
+        "className": "",
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "fd9d20c55a0a574f",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "dienap",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 660,
+        "wires": [
+            [
+                "c4dbc9abfab181d9"
+            ]
+        ]
+    },
+    {
+        "id": "c4dbc9abfab181d9",
+        "type": "ui_gauge",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ĐIỆN ÁP",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 680,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "92934b3be2536cc9",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "dongdien",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 820,
+        "wires": [
+            [
+                "dfe542367c5af962"
+            ]
+        ]
+    },
+    {
+        "id": "dfe542367c5af962",
+        "type": "ui_gauge",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "DÒNG ĐIỆN",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 670,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "90b3d94bb5e807fc",
+        "type": "ui_text",
+        "z": "0e46594e7c184d66",
+        "group": "bdeaa1cd139496b7",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ÁNH SÁNG",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 670,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f4d1d9bca889ae93",
+        "type": "mqtt in",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "topic": "congsuat",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4db4869f657f6363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 960,
+        "wires": [
+            [
+                "7057b95fcfc58105"
+            ]
+        ]
+    },
+    {
+        "id": "7057b95fcfc58105",
+        "type": "ui_gauge",
+        "z": "0e46594e7c184d66",
+        "name": "",
+        "group": "bdeaa1cd139496b7",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CÔNG SUẤT",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "5",
+        "seg2": "8",
+        "className": "",
+        "x": 670,
+        "y": 920,
+        "wires": []
+    }
+]

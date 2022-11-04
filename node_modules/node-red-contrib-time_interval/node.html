@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('time_interval',{
+        category: 'function',
+        color: '#3FADB5',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "inject.svg",
+        label: function() {
+            return this.name||"time_interval";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="time_interval">
+    <div class="form-row">
+        <label for="node-input-name"><i class="_dso_tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="time_interval">
+    <p>The node calculate time interval between two evens.
+       Type of event doesn't matter.
+	   On the first even returns  0, on the second event,
+	   computes time difference between first and second evend in milliseconds</p>
+</script>
